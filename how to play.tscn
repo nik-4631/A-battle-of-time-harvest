@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bdgal0odogq11"]
+
+[ext_resource type="FontFile" uid="uid://drkt0xr6ol80v" path="res://Pixelify_Sans/static/PixelifySans-SemiBold.ttf" id="1_js1n7"]
+[ext_resource type="Script" uid="uid://kbgcrfknfk35" path="res://to main menu.gd" id="2_js1n7"]
+[ext_resource type="Texture2D" uid="uid://dkrdf18hoq8i3" path="res://how to play png.png" id="3_64u4b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kxuq"]
+bg_color = Color(0.44990408, 0.32093593, 0.7998455, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.23811048, 0.090788536, 0.50347936, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_js1n7"]
+bg_color = Color(0.31096327, 0.1660263, 0.5636532, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.18210968, 0.061313957, 0.39421389, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1497372607]
+
+[node name="Button" type="Button" parent="." unique_id=2000614545]
+z_index = 2
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 16.0
+offset_right = 331.0
+offset_bottom = 150.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_hover_color = Color(0.5343608, 0.53436095, 0.53436196, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_js1n7")
+theme_override_font_sizes/font_size = 49
+theme_override_styles/normal = SubResource("StyleBoxFlat_4kxuq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_js1n7")
+text = "main menu"
+script = ExtResource("2_js1n7")
+
+[node name="HowToPlayPng" type="Sprite2D" parent="." unique_id=932743323]
+position = Vector2(575, 413.25003)
+scale = Vector2(0.6933594, 0.7151693)
+texture = ExtResource("3_64u4b")

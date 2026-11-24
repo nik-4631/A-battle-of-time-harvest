@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://byuq2biwsbhah"]
+
+[ext_resource type="PackedScene" uid="uid://d0af8fddopg7t" path="res://tilemap for end cut scene.scn" id="2_jukay"]
+[ext_resource type="PackedScene" uid="uid://bhr3byiuxmc75" path="res://player.tscn" id="4_vv3ma"]
+[ext_resource type="Texture2D" uid="uid://co7dgkm841vwb" path="res://Untitled6_20261115074038.png" id="6_8oeke"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mti6b"]
+size = Vector2(1234, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mm1bc"]
+size = Vector2(1201, 57)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62yky"]
+size = Vector2(101, 752)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qwqyf"]
+size = Vector2(109, 760)
+
+[node name="Node2D" type="Node2D" unique_id=590956602]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1040998028]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1134795323]
+shape = SubResource("RectangleShape2D_4kxuq")
+
+[node name="player" parent="." unique_id=213098972 instance=ExtResource("4_vv3ma")]
+z_index = 1
+position = Vector2(758, 47)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1716131337]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1872684061]
+position = Vector2(554, 623)
+shape = SubResource("RectangleShape2D_mti6b")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2" unique_id=31010501]
+position = Vector2(568.5, -18.5)
+shape = SubResource("RectangleShape2D_mm1bc")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1407086192]
+position = Vector2(-44, 353)
+shape = SubResource("RectangleShape2D_62yky")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1156027]
+position = Vector2(1197, 343)
+shape = SubResource("RectangleShape2D_qwqyf")
+
+[node name="Untitled620261115074038" type="Sprite2D" parent="." unique_id=834759340]
+position = Vector2(370.9425, 226.14563)
+scale = Vector2(0.421875, 0.34179688)
+texture = ExtResource("6_8oeke")
+
+[node name="Node2D" parent="." unique_id=162647077 instance=ExtResource("2_jukay")]
+z_index = -3

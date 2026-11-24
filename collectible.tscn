@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cx8k2c5u1gsqh"]
+
+[ext_resource type="Script" uid="uid://eqyvn6p08uoe" path="res://collectible.gd" id="1_8orai"]
+[ext_resource type="Texture2D" uid="uid://cg4iml62midse" path="res://Papers/RegularPaper.png" id="2_yciwo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(104, 70)
+
+[node name="Collectible" type="Area2D" unique_id=382067250]
+script = ExtResource("1_8orai")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=246504214]
+position = Vector2(-2.0000076, -0.9999962)
+scale = Vector2(2.2109373, 1.7249998)
+texture = ExtResource("2_yciwo")
+region_enabled = true
+region_rect = Rect2(16, 256, 48, 40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=756519498]
+position = Vector2(-2, -1)
+shape = SubResource("RectangleShape2D_4kxuq")

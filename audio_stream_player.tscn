@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://migaymwv0hkx"]
+
+[ext_resource type="AudioStream" uid="uid://dctna281owaee" path="res://battle_ceases_loopable.ogg" id="1_g84o6"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=106783732]
+stream = ExtResource("1_g84o6")
+autoplay = true
